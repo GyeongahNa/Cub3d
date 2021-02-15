@@ -6,7 +6,7 @@
 /*   By: gna <marvin@42.fr>                         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/28 23:46:44 by gna               #+#    #+#             */
-/*   Updated: 2020/08/29 12:07:57 by gna              ###   ########.fr       */
+/*   Updated: 2021/02/15 11:45:02 by gna              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	mapvalidationcheck(char **input, int firstmap, int finalmap)
 	int	height;
 	char	**temp;
 	int	width;
-
+	
 	if (firstmap == -1)
 		return (-1);
 	numrows = 0;
