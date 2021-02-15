@@ -21,10 +21,10 @@
 #include "../header/keyinfo.h"
 #include "../header/raycast.h"
 
-t_rayinfo		**setstructure(void)
+t_rayinfo	**setstructure(void)
 {
 	t_rayinfo	**rayinfo;
-	int			i;
+	int		i;
 
 	rayinfo =\
 	(struct s_rayinfo **)malloc(sizeof(struct s_rayinfo *) * g_num_rays);
@@ -54,7 +54,7 @@ t_spriteinfo	**setsprite(void)
 	return (sprtinfo);
 }
 
-int				**setcpymap(void)
+int	**setcpymap(void)
 {
 	int	**cpmap;
 	int	i;
@@ -70,7 +70,7 @@ int				**setcpymap(void)
 	return (cpmap);
 }
 
-int				**setemptymap(int i)
+int	**setemptymap(int i)
 {
 	int	**emptmap;
 
