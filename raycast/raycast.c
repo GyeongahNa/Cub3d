@@ -81,7 +81,7 @@ void	findwallhit(int columnid)
 
 void	raycast(int **map, int start, int end)
 {
-	int		columnid;
+	int	columnid;
 	double	rayangle;
 
 	columnid = 0;
