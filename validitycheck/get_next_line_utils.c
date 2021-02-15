@@ -49,8 +49,8 @@ char	*ft_strcat(char *dest, const char *src)
 
 char	*ft_strdup(const char *s)
 {
-	int		i;
-	int		len;
+	int	i;
+	int	len;
 	char	*new_s;
 
 	i = 0;
@@ -70,9 +70,9 @@ char	*ft_strdup(const char *s)
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	size_t			i;
-	size_t			end;
-	char			*sub_s;
+	size_t		i;
+	size_t		end;
+	char		*sub_s;
 	unsigned int	s_len;
 
 	i = 0;
@@ -100,7 +100,7 @@ char	*ft_strjoin(char const *s1, const char *s2)
 {
 	unsigned int	s1_len;
 	unsigned int	s2_len;
-	char			*new_s;
+	char		*new_s;
 
 	s1_len = 0;
 	s2_len = 0;
