@@ -13,26 +13,26 @@
 #include "validitycheck.h"
 #include <stdlib.h>
 
-int		g_r_width = 0;
-int		g_r_height = 0;
+int	g_r_width = 0;
+int	g_r_height = 0;
 char	*g_so_path = 0;
 char	*g_we_path = 0;
 char	*g_no_path = 0;
-char		*g_ea_path = 0;
-char		*g_s_path = 0;
-int		g_f_r = 0;
-int		g_f_g = 0;
-int		g_f_b = 0;
-int		g_c_r = 0;
-int		g_c_g = 0;
-int		g_c_b = 0;
+char	*g_ea_path = 0;
+char	*g_s_path = 0;
+int	g_f_r = 0;
+int	g_f_g = 0;
+int	g_f_b = 0;
+int	g_c_r = 0;
+int	g_c_g = 0;
+int	g_c_b = 0;
 
-int			getwidth(char *s)
+int	getwidth(char *s)
 {
-	int		i;
-	int		j;
+	int	i;
+	int	j;
 	char	*temp;
-	int		width;
+	int	width;
 
 	i = 1;
 	temp = (char *)malloc(sizeof(char) * (getlen(s) + 1));
@@ -51,11 +51,11 @@ int			getwidth(char *s)
 	return (width);
 }
 
-int			getheight(char *s)
+int	getheight(char *s)
 {
-	int		i;
-	int		j;
-	int		height;
+	int	i;
+	int	j;
+	int	height;
 	char	*temp;
 
 	i = 1;
@@ -79,10 +79,10 @@ int			getheight(char *s)
 	return (height);
 }
 
-char		*getpath(char *s)
+char	*getpath(char *s)
 {
-	int		i;
-	int		j;
+	int	i;
+	int	j;
 	char	*temp;
 
 	i = 2;
@@ -100,10 +100,10 @@ char		*getpath(char *s)
 	return (temp);
 }
 
-char		*getspath(char *s)
+char	*getspath(char *s)
 {
-	int		i;
-	int		j;
+	int	i;
+	int	j;
 	char	*temp;
 
 	i = 1;
