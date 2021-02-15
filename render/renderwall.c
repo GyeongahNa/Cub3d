@@ -20,7 +20,7 @@
 #include "../header/raycast.h"
 #include "../header/mlx.h"
 
-int		caltexx(int columnid)
+int	caltexx(int columnid)
 {
 	int	texx;
 
@@ -32,7 +32,7 @@ int		caltexx(int columnid)
 	return (texx);
 }
 
-int		shadow(int color, double dist)
+int	shadow(int color, double dist)
 {
 	double	r;
 	double	g;
@@ -45,7 +45,7 @@ int		shadow(int color, double dist)
 	return (color);
 }
 
-int		gettexture(int columnid)
+int	gettexture(int columnid)
 {
 	double	wallhitx;
 	double	wallhity;
@@ -65,8 +65,8 @@ int		gettexture(int columnid)
 
 void	wallrendering(double d, int col, int k, int start)
 {
-	int		texx;
-	int		texy;
+	int	texx;
+	int	texy;
 	double	wallheight;
 
 	while (col < g_num_rays)
