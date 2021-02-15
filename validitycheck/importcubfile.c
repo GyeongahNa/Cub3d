@@ -14,12 +14,12 @@
 #include "get_next_line.h"
 #include <stdlib.h>
 
-int		cntlines(char *path)
+int	cntlines(char *path)
 {
-	int		fd;
-	int		num;
+	int	fd;
+	int	num;
 	char	*line;
-	int		cnt;
+	int	cnt;
 
 	fd = open(path, O_RDONLY);
 	num = get_next_line(fd, &line);
@@ -37,10 +37,10 @@ int		cntlines(char *path)
 char	**set_input(char *path)
 {
 	char	**buf;
-	int		fd;
-	int		cnt;
+	int	fd;
+	int	cnt;
 	char	*line;
-	int		i;
+	int	i;
 
 	buf = (char **)malloc(sizeof(char *) * (cntlines(path) + 1));
 	fd = open(path, O_RDONLY);
