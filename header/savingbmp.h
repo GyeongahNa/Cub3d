@@ -13,11 +13,10 @@
 #ifndef SAVINGBMP_H
 # define SAVINGBMP_H
 
-void					rendersprite(int num);
-static int				extract_color(int x, int y);
-static int				fill_bmp_color(int fd, int pad);
-static	void			int_to_char(unsigned char *num,
-int value);
-static int				write_bmp_header(int fd, int file_size);
+void          rendersprite(int num);
+static int    extract_color(int x, int y);
+static int    fill_bmp_color(int fd, int pad);
+static	void  int_to_char(unsigned char *num, int value);
+static int    write_bmp_header(int fd, int file_size);
 
 #endif
