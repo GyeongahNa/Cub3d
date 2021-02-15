@@ -12,11 +12,11 @@
 
 #include "validitycheck.h"
 
-int			validitycheck(char *cubfile)
+int	validitycheck(char *cubfile)
 {
 	char	**input;
-	int		firstmap;
-	int		finalmap;
+	int	firstmap;
+	int	finalmap;
 
 	input = set_input(cubfile);
 	if (checkinfos(input, 0) == -1)
