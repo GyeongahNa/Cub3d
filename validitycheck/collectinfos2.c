@@ -13,12 +13,12 @@
 #include "validitycheck.h"
 #include <stdlib.h>
 
-int			getrcolor(char *s)
+int	getrcolor(char *s)
 {
-	int		i;
-	int		j;
+	int	i;
+	int	j;
 	char	*temp;
-	int		r;
+	int	r;
 
 	i = 1;
 	temp = (char *)malloc(sizeof(char) * (getlen(s) + 1));
@@ -37,12 +37,12 @@ int			getrcolor(char *s)
 	return (r);
 }
 
-int			getgcolor(char *s)
+int	getgcolor(char *s)
 {
-	int		i;
-	int		j;
+	int	i;
+	int	j;
 	char	*temp;
-	int		g;
+	int	g;
 
 	temp = (char *)malloc(sizeof(char) * (getlen(s) + 1));
 	i = 1;
@@ -66,7 +66,7 @@ int			getgcolor(char *s)
 	return (g);
 }
 
-int			getbcolor(char *s, int i, int j, char *temp)
+int	getbcolor(char *s, int i, int j, char *temp)
 {
 	temp = (char *)malloc(sizeof(char) * (getlen(s) + 1));
 	while (s[i] == ' ')
@@ -94,7 +94,7 @@ int			getbcolor(char *s, int i, int j, char *temp)
 	return (j);
 }
 
-void		getrgb(char *s, int fc)
+void	getrgb(char *s, int fc)
 {
 	if (fc == 'F')
 	{
@@ -110,7 +110,7 @@ void		getrgb(char *s, int fc)
 	}
 }
 
-void		collectinfos(char **input, int i)
+void	collectinfos(char **input, int i)
 {
 	i = 0;
 	while (input[i] != 0)
