@@ -21,7 +21,7 @@
 #include "../header/raycast.h"
 #include "../header/mlx.h"
 
-int		checksprite(void)
+int	checksprite(void)
 {
 	int	columnid;
 	int	issprite;
@@ -37,7 +37,7 @@ int		checksprite(void)
 	return (issprite == 1 ? 1 : -1);
 }
 
-int		findnearest(double min, int mincol)
+int	findnearest(double min, int mincol)
 {
 	int		columnid;
 	int		map_x;
@@ -113,7 +113,7 @@ void	getinfo(int nearest, int cnt)
 	g_sprtinfo[cnt]->end = columnid - 1;
 }
 
-int		savespriteinfo(void)
+int	savespriteinfo(void)
 {
 	int	sprite;
 	int	nearest;
