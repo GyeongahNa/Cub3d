@@ -20,7 +20,7 @@
 #include "../header/raycast.h"
 #include "../header/mlx.h"
 
-double		normalizeangle(double angle)
+double	normalizeangle(double angle)
 {
 	angle = fmod(angle, (2.0 * M_PI));
 	if (angle < 0)
@@ -28,15 +28,15 @@ double		normalizeangle(double angle)
 	return (angle);
 }
 
-double		distancepoints(double x1, double y1, double x2, double y2)
+double	distancepoints(double x1, double y1, double x2, double y2)
 {
 	return (sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1)));
 }
 
-int			clearimage(void)
+int	clearimage(void)
 {
-	int		i;
-	int		j;
+	int	i;
+	int	j;
 
 	i = 0;
 	while (i < 3)
@@ -52,9 +52,9 @@ int			clearimage(void)
 	return (0);
 }
 
-void		*ft_memset(void *s, int c, size_t n)
+void	*ft_memset(void *s, int c, size_t n)
 {
-	size_t			i;
+	size_t		i;
 	unsigned char	*ptr;
 
 	i = 0;
