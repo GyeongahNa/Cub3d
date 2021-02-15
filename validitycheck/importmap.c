@@ -13,7 +13,7 @@
 #include <stdlib.h>
 #include "validitycheck.h"
 
-int		findfirstmapline(char **input)
+int	findfirstmapline(char **input)
 {
 	int	i;
 
@@ -27,7 +27,7 @@ int		findfirstmapline(char **input)
 	return (-1);
 }
 
-int		findfinalmapline(char **input, int firstmapline)
+int	findfinalmapline(char **input, int firstmapline)
 {
 	int	i;
 
@@ -39,7 +39,7 @@ int		findfinalmapline(char **input, int firstmapline)
 	return (i - 1);
 }
 
-int		getmaxwidth(char **input, int firstmap, int finalmap)
+int	getmaxwidth(char **input, int firstmap, int finalmap)
 {
 	int	maxwidth;
 	int	i;
@@ -58,7 +58,7 @@ int		getmaxwidth(char **input, int firstmap, int finalmap)
 char	**setmap(int height, int width)
 {
 	char	**temp;
-	int		i;
+	int	i;
 
 	temp = (char **)malloc(sizeof(char *) * (height + 1));
 	i = 0;
@@ -74,9 +74,9 @@ char	**setmap(int height, int width)
 char	**getmap(char **input, int firstmap, int finalmap, int i)
 {
 	char	**temp;
-	int		width;
-	int		height;
-	int		j;
+	int	width;
+	int	height;
+	int	j;
 
 	width = getmaxwidth(input, firstmap, finalmap);
 	height = finalmap - firstmap + 1;
