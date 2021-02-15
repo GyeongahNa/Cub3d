@@ -16,9 +16,9 @@
 #include "get_next_line.h"
 #define BUFFER_SIZE 30
 
-int			str_len(char *str)
+int	str_len(char *str)
 {
-	int		len;
+	int	len;
 
 	len = 0;
 	while (str[len] != '\0' && str[len] != '\n')
@@ -26,9 +26,9 @@ int			str_len(char *str)
 	return (len);
 }
 
-char		*ft_strchr(const char *str, int c)
+char	*ft_strchr(const char *str, int c)
 {
-	int		i;
+	int	i;
 
 	i = 0;
 	while (str[i] != '\0')
@@ -42,9 +42,9 @@ char		*ft_strchr(const char *str, int c)
 	return ((char *)(0));
 }
 
-int			to_line(int fd, char **arr, char **line)
+int	to_line(int fd, char **arr, char **line)
 {
-	int		len;
+	int	len;
 	char	*tmp;
 
 	len = str_len(arr[fd]);
@@ -71,7 +71,7 @@ int			to_line(int fd, char **arr, char **line)
 	}
 }
 
-int			output(int ret, int fd, char **arr, char **line)
+int	output(int ret, int fd, char **arr, char **line)
 {
 	if (ret < 0)
 		return (-1);
@@ -84,7 +84,7 @@ int			output(int ret, int fd, char **arr, char **line)
 		return (to_line(fd, arr, line));
 }
 
-int			get_next_line(int fd, char **line)
+int	get_next_line(int fd, char **line)
 {
 	char		*buff;
 	static char	*arr[1024] = {0, };
