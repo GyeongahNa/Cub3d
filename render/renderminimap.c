@@ -63,7 +63,7 @@ void	rendermap(void)
 
 void	renderrays(int i, int j, double k)
 {
-	int		columnid;
+	int	columnid;
 	double	wallhitx;
 	double	wallhity;
 
