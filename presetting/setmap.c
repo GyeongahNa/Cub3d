@@ -20,7 +20,7 @@
 #include "../header/raycast.h"
 #include "../header/mlx.h"
 
-int		getmapwidth(void)
+int	getmapwidth(void)
 {
 	int	width;
 
@@ -30,7 +30,7 @@ int		getmapwidth(void)
 	return (width);
 }
 
-int		getmapheight(void)
+int	getmapheight(void)
 {
 	int	height;
 
