@@ -20,7 +20,7 @@
 #include "../header/raycast.h"
 #include "../header/mlx.h"
 
-int		*load_image(char *path, int s, int b, int e)
+int	*load_image(char *path, int s, int b, int e)
 {
 	int	*res;
 	int	x;
