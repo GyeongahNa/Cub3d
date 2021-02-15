@@ -23,7 +23,7 @@
 
 void	renderfloor(void)
 {
-	int		columnid;
+	int	columnid;
 	double	wallheight;
 	double	k;
 
@@ -45,7 +45,7 @@ void	renderfloor(void)
 
 void	renderceiling(void)
 {
-	int		columnid;
+	int	columnid;
 	double	wallheight;
 	double	k;
 
