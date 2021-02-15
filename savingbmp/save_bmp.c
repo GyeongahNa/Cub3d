@@ -20,7 +20,7 @@
 #include "../header/raycast.h"
 #include "../header/mlx.h"
 
-static int			extract_color(int x, int y)
+static int	extract_color(int x, int y)
 {
 	int	rgb;
 	int	color;
@@ -30,12 +30,12 @@ static int			extract_color(int x, int y)
 	return (rgb);
 }
 
-static int			fill_bmp_color(int fd, int pad)
+static int	fill_bmp_color(int fd, int pad)
 {
 	unsigned char	zero[3];
-	int				x;
-	int				y;
-	int				color;
+	int		x;
+	int		y;
+	int		color;
 
 	ft_memset(zero, 0, 3);
 	y = 0;
@@ -56,7 +56,7 @@ static int			fill_bmp_color(int fd, int pad)
 	return (1);
 }
 
-static	void		int_to_char(unsigned char *num, int value)
+static	void	int_to_char(unsigned char *num, int value)
 {
 	num[0] = (unsigned char)(value);
 	num[1] = (unsigned char)(value >> 8);
@@ -64,7 +64,7 @@ static	void		int_to_char(unsigned char *num, int value)
 	num[3] = (unsigned char)(value >> 24);
 }
 
-static int			write_bmp_header(int fd, int file_size)
+static int	write_bmp_header(int fd, int file_size)
 {
 	unsigned char	bmp_file_header[14];
 	unsigned char	bmp_info_header[40];
@@ -87,7 +87,7 @@ static int			write_bmp_header(int fd, int file_size)
 	return (1);
 }
 
-int					save_bmp(void)
+int		save_bmp(void)
 {
 	int	fd;
 	int	file_size;
