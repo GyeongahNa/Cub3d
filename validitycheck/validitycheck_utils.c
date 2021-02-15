@@ -13,7 +13,7 @@
 #include <unistd.h>
 #include "validitycheck.h"
 
-int			getlen(char *s)
+int	getlen(char *s)
 {
 	int	len;
 
@@ -23,9 +23,9 @@ int			getlen(char *s)
 	return (len);
 }
 
-void		writesentence(char *s)
+void	writesentence(char *s)
 {
-	int		i;
+	int	i;
 
 	i = 0;
 	while (s[i] != '\0')
@@ -35,7 +35,7 @@ void		writesentence(char *s)
 	}
 }
 
-int			endwithcub(char *s)
+int	endwithcub(char *s)
 {
 	if (getlen(s) < 4)
 		return (-1);
@@ -50,7 +50,7 @@ int			endwithcub(char *s)
 	return (1);
 }
 
-int			onlyallowed(char *s)
+int	onlyallowed(char *s)
 {
 	int	i;
 
