@@ -25,10 +25,10 @@ int	checkmap(char **temp, int width, int height)
 
 int	mapvalidationcheck(char **input, int firstmap, int finalmap)
 {
-	int		numrows;
-	int		height;
+	int	numrows;
+	int	height;
 	char	**temp;
-	int		width;
+	int	width;
 
 	if (firstmap == -1)
 		return (-1);
