@@ -12,25 +12,25 @@
 
 #include "validitycheck.h"
 
-int			noscenemessage(void)
+int	noscenemessage(void)
 {
 	writesentence("Error : no scene discription file.\n");
 	return (-1);
 }
 
-int			toomuchmessage(void)
+int	toomuchmessage(void)
 {
 	writesentence("Error : too many arguments were input.");
 	return (-1);
 }
 
-int			incorrectformatmessage(void)
+int	incorrectformatmessage(void)
 {
 	writesentence("Error : format of scene discription file isn't '.cub'.\n");
 	return (-1);
 }
 
-int			nosavemessage(void)
+int	nosavemessage(void)
 {
 	writesentence(
 	"Error : The number of arguments is two, \
@@ -38,10 +38,10 @@ int			nosavemessage(void)
 	return (-1);
 }
 
-int			issave(char *s)
+int	issave(char *s)
 {
 	char	*save;
-	int		i;
+	int	i;
 
 	save = "--save";
 	i = 0;
