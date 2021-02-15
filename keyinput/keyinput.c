@@ -50,7 +50,7 @@ void	react_updownkey(int key)
 	}
 }
 
-int		ft_keypress(int key)
+int	ft_keypress(int key)
 {
 	if (key == ESC)
 		destroywindow();
@@ -63,7 +63,7 @@ int		ft_keypress(int key)
 	return (0);
 }
 
-int		ft_keyrelease(int key)
+int	ft_keyrelease(int key)
 {
 	if (key == L_ARROW)
 		g_turndirection = 0;
@@ -80,7 +80,7 @@ int		ft_keyrelease(int key)
 	return (0);
 }
 
-int		processinput(void)
+int	processinput(void)
 {
 	mlx_hook(g_win_ptr, KEYPRESS, KEYPRESSMASK, ft_keypress, (void *)(0));
 	mlx_hook(g_win_ptr, KEYRELEASE, KEYRELEASEMASK, ft_keyrelease, (void *)(0));
