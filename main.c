@@ -20,38 +20,38 @@
 #include "header/raycast.h"
 #include "header/mlx.h"
 
-int				**g_imap = NULL;
-void				*g_mlx_ptr = NULL;
-void				*g_win_ptr = NULL;
-void				*g_image_ptr = NULL;
-int				*g_image_data = NULL;
-void				*g_xpm_image_ptr = NULL;
-int				*g_xpm_image_data = NULL;
-int				**g_texture = NULL;
-t_rayinfo		**g_rayinfo = NULL;
-t_spriteinfo		**g_sprtinfo = NULL;
-int				**g_cpmap = NULL;
-int				**g_emptmap = NULL;
-double			g_turndirection = 0;
-double			g_walkdirection = 0;
-double			g_lrwalkdirection = 0;
-double			g_movespeed = 5;
-double			g_rotationspeed = 3 * (M_PI / 180);
-int				g_argc = 0;
-int				g_tile_size = 60;
-int				g_map_num_rows = 0;
-int				g_map_num_cols = 0;
-int				g_window_width = 0;
-int				g_window_height = 0;
-int				g_num_rays = 0;
-double			g_middleline = 0;
-double			g_player_x = 0;
-double			g_player_y = 0;
-double			g_rotationangle = 0;
-double			g_life = 100;
-int				g_cnt;
+int		**g_imap = NULL;
+void		*g_mlx_ptr = NULL;
+void		*g_win_ptr = NULL;
+void		*g_image_ptr = NULL;
+int		*g_image_data = NULL;
+void		*g_xpm_image_ptr = NULL;
+int		*g_xpm_image_data = NULL;
+int		**g_texture = NULL;
+t_rayinfo	**g_rayinfo = NULL;
+t_spriteinfo	**g_sprtinfo = NULL;
+int		**g_cpmap = NULL;
+int		**g_emptmap = NULL;
+double		g_turndirection = 0;
+double		g_walkdirection = 0;
+double		g_lrwalkdirection = 0;
+double		g_movespeed = 5;
+double		g_rotationspeed = 3 * (M_PI / 180);
+int		g_argc = 0;
+int		g_tile_size = 60;
+int		g_map_num_rows = 0;
+int		g_map_num_cols = 0;
+int		g_window_width = 0;
+int		g_window_height = 0;
+int		g_num_rays = 0;
+double		g_middleline = 0;
+double		g_player_x = 0;
+double		g_player_y = 0;
+double		g_rotationangle = 0;
+double		g_life = 100;
+int		g_cnt;
 
-int				render(int argc)
+int	render(int argc)
 {
 	int cnt;
 
@@ -74,14 +74,14 @@ int				render(int argc)
 	return (0);
 }
 
-int				main_loop(void)
+int	main_loop(void)
 {
 	update();
 	render(g_argc);
 	return (0);
 }
 
-int				main(int argc, char *argv[])
+int	main(int argc, char *argv[])
 {
 	if (argc <= 1)
 		return (noscenemessage());
