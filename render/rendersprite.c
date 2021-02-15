@@ -20,7 +20,7 @@
 #include "../header/raycast.h"
 #include "../header/mlx.h"
 
-int			getcenter(int num)
+int	getcenter(int num)
 {
 	int	center;
 
@@ -48,13 +48,13 @@ int			getcenter(int num)
 	return (center);
 }
 
-void		renderpart(int columnid, double dist, int color)
+void	renderpart(int columnid, double dist, int color)
 {
-	int			texx;
-	int			texy;
+	int		texx;
+	int		texy;
 	double		wallheight;
-	int			start;
-	int			k;
+	int		start;
+	int		k;
 
 	texx = caltexx(columnid);
 	wallheight = g_rayinfo[columnid]->wallheight;
@@ -76,7 +76,7 @@ void		renderpart(int columnid, double dist, int color)
 	}
 }
 
-void		renderfrontwall(void)
+void	renderfrontwall(void)
 {
 	int	columnid;
 
@@ -95,13 +95,13 @@ void		renderfrontwall(void)
 	}
 }
 
-void		renderheight(int i, int rowstart, int num, int texx)
+void	renderheight(int i, int rowstart, int num, int texx)
 {
-	int			j;
-	int			texy;
+	int		j;
+	int		texy;
 	double		dist;
-	int			color;
-	int			rowend;
+	int		color;
+	int		rowend;
 
 	j = rowstart;
 	rowend = (int)(rowstart + g_sprtinfo[num]->wallheight);
@@ -124,7 +124,7 @@ void		renderheight(int i, int rowstart, int num, int texx)
 	}
 }
 
-void		renderwidth(int colstart, int colend, int num)
+void	renderwidth(int colstart, int colend, int num)
 {
 	int		texx;
 	int		rowstart;
