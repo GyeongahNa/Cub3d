@@ -21,7 +21,7 @@
 #include "../header/keyinfo.h"
 #include "../header/raycast.h"
 
-void			cpymap(void)
+void	cpymap(void)
 {
 	int	i;
 	int	j;
@@ -40,7 +40,7 @@ void			cpymap(void)
 	}
 }
 
-void			cpyemptymap(void)
+void	cpyemptymap(void)
 {
 	int	i;
 	int	j;
