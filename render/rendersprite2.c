@@ -22,8 +22,8 @@
 
 void	rendersprite(int num)
 {
-	int		colstart;
-	int		colend;
+	int	colstart;
+	int	colend;
 	double	wallheight;
 
 	if (num <= 0)
