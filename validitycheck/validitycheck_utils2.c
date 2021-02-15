@@ -12,7 +12,7 @@
 
 #include "validitycheck.h"
 
-int		sanity_check(char *str)
+int	sanity_check(char *str)
 {
 	int	i;
 
@@ -30,7 +30,7 @@ int		sanity_check(char *str)
 
 int		ft_atoi(char *str)
 {
-	int		i;
+	int	i;
 	long	decimal;
 
 	if (sanity_check(str) == -1)
