@@ -65,7 +65,7 @@ void	vertwallhit(int col, int **map, int start, int end)
 	double	xinter;
 	double	yst;
 	double	xst;
-	int		texnum;
+	int	texnum;
 
 	g_rayinfo[col]->vertcoord.washit = 0;
 	xinter = calxintercept(col);
