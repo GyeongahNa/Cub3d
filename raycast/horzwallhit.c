@@ -62,7 +62,7 @@ void	horzwallhit(int columnid, int **map, int start, int end)
 	double	xinter;
 	double	yst;
 	double	xst;
-	int		texnum;
+	int	texnum;
 
 	g_rayinfo[columnid]->horzcoord.washit = 0;
 	yinter = calyintercept(columnid);
