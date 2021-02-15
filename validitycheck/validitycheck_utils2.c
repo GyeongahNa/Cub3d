@@ -28,7 +28,7 @@ int	sanity_check(char *str)
 		return (-1);
 }
 
-int		ft_atoi(char *str)
+int	ft_atoi(char *str)
 {
 	int	i;
 	long	decimal;
