@@ -39,9 +39,9 @@ int	checksprite(void)
 
 int	findnearest(double min, int mincol)
 {
-	int		columnid;
-	int		map_x;
-	int		map_y;
+	int	columnid;
+	int	map_x;
+	int	map_y;
 	double	node_x;
 	double	node_y;
 
@@ -67,8 +67,8 @@ int	findnearest(double min, int mincol)
 
 void	getbasicinfo(int nearest, int cnt)
 {
-	int		map_x;
-	int		map_y;
+	int	map_x;
+	int	map_y;
 	double	projectionplane;
 	double	raydistance;
 	double	wallheight;
