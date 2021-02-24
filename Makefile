@@ -34,10 +34,10 @@ $(NAME) : $(OBJ)
 	$(CC)  $(SRC) -o cub3D.out -I /usr/local/include -L /usr/local/lib -lmlx -framework OpenGL -framework Appkit
 
 clean :
-		/bin/rm -f $(OBJ) $(OBJ_BONUS)
+	/bin/rm -f $(OBJ) $(OBJ_BONUS)
 
 fclean : clean
-		/bin/rm -f $(NAME) ./bonus/cub3D.out
+	/bin/rm -f $(NAME) ./bonus/cub3D.out
 
 re : fclean all
 
